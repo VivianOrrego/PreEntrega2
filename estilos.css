@@ -1,0 +1,30 @@
+
+.navbar{
+    background-color: rgb(185, 51, 185) !important; 
+}
+.navbar-brand{
+    color: #000 !important;
+}
+.navbar{
+    font-size: 20px;
+}
+.navbar-collapse{
+    justify-content: end;
+}
+.nav-link{
+    color: #000 !important;
+}
+
+span{
+    color: yellow;
+    font-size: 22px;
+}
+
+@media only screen and (min-width:0) and (max-width: 575px) {
+
+    .navbar-collapse{
+        color: #000 !important;
+        text-align: center;
+        box-shadow: 0 0 5px plum;
+    }
+}
