@@ -1,23 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bricolage+Grotesque:opsz@10..48&display=swap');
+/* font-family: 'Acme', sans-serif;
+font-family: 'Bricolage Grotesque', sans-serif;
+font-family: 'Noto Serif', serif;
+font-family: 'Roboto Slab', serif; */
+
+*{
+    font-family: 'Noto Serif', serif;;
+}
 
 .navbar{
     background-color: rgb(185, 51, 185) !important; 
 }
 .navbar-brand{
     color: #000 !important;
+    font-size: 35px;
 }
 .navbar{
-    font-size: 20px;
+    font-size: 30px;
 }
 .navbar-collapse{
     justify-content: end;
+    
 }
 .nav-link{
     color: #000 !important;
 }
 
-span{
+
+.logo3{
+    color: white;
+    font-size: 40px;
+}
+.logo4{
     color: yellow;
-    font-size: 22px;
+    font-size: 40px;
 }
 
 /* galery */
@@ -37,15 +53,22 @@ footer{
     margin-top: 50px;
 
 }
+.logo1{
+    font-size: 50px;
+}
+.logo2{
+    color: yellow;
+    font-size: 50px;
+}
 /* Formulario */
 .tu-espacio{
     background-color: #eeeeee;
 }
 .container{
     background-color: #fff;
-    width: 430px;
-    height: 500px;
-    padding: 5px 35px;
+    width: 600px;
+    height: 700px;
+    padding: 5px;
     margin-top: 50px;
     border-radius: 30px;
     
@@ -59,19 +82,56 @@ footer{
 .h2-ingreso{
     margin-top: 30px;
     text-align: center;
-    font-size: 25px;
+    font-size: 35px;
 }
 .form-label{
-    font-size: 12px;
+    font-size: 18px;
+}
+.form-control{
+    padding: 1rem;
+}
+.psw{
+    font-size: 19px;
+}
+.mb-3{
+    margin-bottom: 40px !important;
+}
+.btn{
+padding: 15px;
+font-size: 20px;
 }
 
+/* gimnasios */
+.container-fluid{
+    display: flex;
+    justify-content: center;
+    margin: 25px 20px;
+    gap: 25px;
+    
+}
 
-@media only screen and (min-width:0) and (max-width: 575px) {
+@media only screen and (min-width:0) and (max-width: 768px) {
 
     .navbar-collapse{
         color: #000 !important;
         text-align: center;
         /* background-color: rgba(255, 255, 165, 0.557); */
         box-shadow: 0 0 10px yellow;
+    }
+    .container{
+        background-color: #fff;
+        width: 430px;
+        height: 500px;
+        padding: 5px 35px;
+        margin-top: 50px;
+        border-radius: 30px;
+    }
+    .h2-ingreso{
+        margin-top: 30px;
+        text-align: center;
+        font-size: 25px;
+    }
+    .form-label{
+        font-size: 12px;
     }
 }
