@@ -190,13 +190,12 @@ footer {
 
 /* FQA fin */
 
-@media only screen and (min-width:0) and (max-width: 768px) {
+@media only screen and (min-width:530px) and (max-width: 768px) {
 
     /* Navbar iniia */
     .navbar-collapse {
         color: #000 !important;
         text-align: center;
-        /* background-color: rgba(255, 255, 165, 0.557); */
         box-shadow: 0 0 10px yellow;
     }
 
