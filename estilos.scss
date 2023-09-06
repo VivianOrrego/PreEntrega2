@@ -18,16 +18,13 @@ $morado: rgb(185, 51, 185);
     background-color: $morado !important;
     font-size: 20px;
     padding: 5px;
-
     .brand {
         color: $negro !important;
         font-size: 30px;
     }
-
     .collapse {
         justify-content: end;
     }
-
     .link {
         color: $negro !important;
     }
@@ -104,7 +101,6 @@ footer {
     .control {
         padding: 0.7rem;
     }
-    
 }
 
 .psw {
@@ -126,11 +122,9 @@ footer {
     justify-content: center;
     margin: 25px 20px;
     gap: 25px;
-
 }
 
 /* FQA inicia */
-
 .container-faq {
     width: 60%;
     margin: 100px auto;
@@ -191,9 +185,7 @@ footer {
 
 }
 
-
 /* FQA fin */
-
 @media only screen and (min-width:530px) and (max-width: 768px) {
 
     /* Navbar iniia */
