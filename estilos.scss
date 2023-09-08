@@ -29,11 +29,19 @@ $morado: rgb(185, 51, 185);
         color: rgba(255, 255, 255, 0.887) !important;
         font-size: 25px;
         transition: all 0.6s;
-        gap: 20px;
+        
     }
     .nav-link:hover{
         color: $amarillo !important;
-        transform: scale(1.1);
+        transform: scale(0.9);
+    }
+    li:nth-child(4){
+        background-color: $amarillo;
+        color: $negro !important;
+        border-radius: 5px;
+        .nav-link{
+            color: #000 !important;
+        }
     }
 }
 

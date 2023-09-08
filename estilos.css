@@ -23,11 +23,18 @@ font-family: 'Roboto Slab', serif; */
   color: rgba(255, 255, 255, 0.887) !important;
   font-size: 25px;
   transition: all 0.6s;
-  gap: 20px;
 }
 .navbar .nav-link:hover {
   color: yellow !important;
-  transform: scale(1.1);
+  transform: scale(0.9);
+}
+.navbar li:nth-child(4) {
+  background-color: yellow;
+  color: black !important;
+  border-radius: 5px;
+}
+.navbar li:nth-child(4) .nav-link {
+  color: #000 !important;
 }
 
 .logo3 {
