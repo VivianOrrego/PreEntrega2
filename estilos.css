@@ -238,7 +238,6 @@ footer {
     border-radius: 30px;
   }
   .h2-ingreso {
-    /* margin: 5px 0px 8px !important; */
     text-align: center !important;
     font-size: 30px;
   }
@@ -257,7 +256,7 @@ footer {
   .container-fluid {
     display: flex;
     flex-wrap: wrap;
-    margin: 25px 20px;
+    margin: auto;
     gap: 25px;
   }
   /* galery fin */
