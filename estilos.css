@@ -19,13 +19,25 @@ font-family: 'Roboto Slab', serif; */
 .navbar .collapse {
   justify-content: end;
 }
-.navbar .link {
-  color: black !important;
+.navbar .nav-link {
+  color: rgba(255, 255, 255, 0.887) !important;
+  font-size: 25px;
+  transition: all 0.6s;
+  gap: 20px;
+}
+.navbar .nav-link:hover {
+  color: yellow !important;
+  transform: scale(1.1);
 }
 
 .logo3 {
   color: white;
   font-size: 30px;
+  transition: all 0.6s;
+}
+
+.logo3:hover {
+  transform: scale(1.2);
 }
 
 .logo4 {
@@ -33,7 +45,7 @@ font-family: 'Roboto Slab', serif; */
   font-size: 30px;
 }
 
-/* galery */
+/* Home */
 .carousel-inner img {
   height: 80%;
   width: 100%;
@@ -102,6 +114,8 @@ footer {
 .btn {
   padding: 10px;
   font-size: 18px;
+  color: black;
+  box-shadow: none;
 }
 
 /* gimnasios */
@@ -110,6 +124,34 @@ footer {
   justify-content: center;
   margin: 25px 20px;
   gap: 25px;
+}
+
+.card-img-top {
+  transition: all 0.6s;
+}
+
+.card-img-top:hover {
+  transform: scale(0.9);
+}
+
+.btn-grad {
+  background-image: linear-gradient(to right, #DA22FF 0%, rgba(246, 217, 100, 0.862745098) 51%, #DA22FF 100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
 
 /* FQA inicia */
@@ -139,6 +181,8 @@ footer {
   align-items: center;
   padding: 20px 20px 20px 80px;
   transition: 0.4s;
+  background-color: #FBDA61;
+  background-image: linear-gradient(180deg, #FBDA61 0%, #e7b3ff 100%);
 }
 .cont-faq .item-faq .question span {
   position: absolute;
