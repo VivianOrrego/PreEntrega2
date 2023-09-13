@@ -77,6 +77,69 @@ footer {
   font-size: 50px;
 }
 
+.texto1 {
+  text-align: center;
+  color: black;
+  font-size: 50px;
+  margin-top: 30px;
+}
+
+.texto2 {
+  color: rgb(244, 190, 14);
+  font-size: 50px;
+}
+
+/* buscador del home */
+.container2 {
+  background-image: url(https://smartsite-production.s3.amazonaws.com/images/new_home_pe/buscar-sede.webp);
+  height: 300px;
+  margin-top: 30px;
+  border-radius: 30px;
+}
+.container2 .container-search {
+  position: absolute;
+  left: 48%;
+  top: 145%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+.container2 input {
+  outline: none;
+  box-sizing: border-box;
+  height: 60px;
+  width: 400px;
+  padding: 0 20px;
+  color: #000;
+  border-radius: 50px;
+  font-size: 20px;
+  border: 1px solid #D50000;
+  transition: all 0.7s ease;
+}
+.container2 .btn-search {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 80px;
+  height: 80px;
+  background-color: rgb(185, 51, 185);
+  line-height: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.container2 .btn-search i {
+  font-size: 25px;
+  color: #fff;
+  line-height: 80px;
+  transition: all 0.7s ease;
+}
+.container2 .container-search:hover input {
+  width: 350px;
+}
+.container2 .container-search:hover i {
+  transform: rotate(-360deg);
+}
+
 /* Formulario */
 .fondo {
   background-color: #eeeeee;
@@ -161,10 +224,36 @@ footer {
   text-decoration: none;
 }
 
+/* boostrap */
+.form2 {
+  margin-top: 60px;
+}
+
+main {
+  height: 700px;
+}
+
+aside h1 {
+  margin-top: 60px;
+  padding: 20px;
+}
+aside p {
+  text-align: right;
+  font-size: 18px;
+}
+
+.cont {
+  width: 80%;
+  margin: 5px;
+  margin-top: 30px;
+  padding: 10px;
+}
+
 /* FQA inicia */
 .container-faq {
-  width: 60%;
+  width: 70%;
   margin: 100px auto;
+  text-align: justify;
 }
 
 .cont-faq .faq {
@@ -214,12 +303,12 @@ footer {
   opacity: 0.1;
 }
 .cont-faq .item-faq .answer p {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 /* FQA fin */
 @media only screen and (min-width: 200px) and (max-width: 768px) {
-  /* Navbar iniia */
+  /* Navbar inicia */
   .navbar-collapse {
     color: black !important;
     text-align: center;
@@ -260,4 +349,19 @@ footer {
     gap: 25px;
   }
   /* galery fin */
+  /* fqa inicia */
+  .container-faq {
+    width: 80%;
+    margin: 100px auto;
+  }
+}
+@media (min-width: 992px) {
+  .sec2 {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .sec {
+    display: none;
+  }
 }/*# sourceMappingURL=estilos.css.map */

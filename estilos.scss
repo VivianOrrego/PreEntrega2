@@ -85,6 +85,70 @@ footer {
     font-size: 50px;
 }
 
+.texto1{
+    text-align: center;
+    color: $negro;
+    font-size: 50px;
+    margin-top: 30px;
+}
+.texto2{
+    color: rgb(244, 190, 14);
+    font-size: 50px;
+}
+
+/* buscador del home */
+.container2{
+    background-image: url(https://smartsite-production.s3.amazonaws.com/images/new_home_pe/buscar-sede.webp);
+    height: 300px;
+    margin-top: 30px;
+    border-radius: 30px;
+
+    .container-search{
+        position: absolute;
+        left: 48%;
+        top: 145%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+    }
+    input{
+        outline: none;
+        box-sizing: border-box;
+        height: 60px;
+        width: 400px;
+        padding: 0 20px;
+        color: #000;
+        border-radius: 50px;
+        font-size: 20px;
+        border: 1px solid #D50000;
+        transition: all .7s ease;
+    }
+    .btn-search{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 80px;
+        height: 80px;
+        background-color: $morado;
+        line-height: 50%;
+        text-align: center;
+        cursor: pointer;
+        transition: .5s;
+    
+        i{
+            font-size: 25px;
+            color: #fff;
+            line-height: 80px;
+            transition: all .7s ease;
+        }
+    }
+    
+    .container-search:hover input{
+        width: 350px;
+    }
+    .container-search:hover i{
+        transform: rotate(-360deg);
+    }
+}
 
 
 /* Formulario */
@@ -142,7 +206,7 @@ footer {
     box-shadow: none;
 }
 
- 
+
 
 /* gimnasios */
 .container-fluid {
@@ -171,18 +235,21 @@ footer {
     box-shadow: 0 0 20px #eee;
     border-radius: 10px;
     display: block;
-  }
+}
 
-  .btn-grad:hover {
+.btn-grad:hover {
     background-position: right center; /* change the direction of the change here */
     color: #fff;
     text-decoration: none;
-  }
+}
+
+@import "_contacto.scss";
 
 /* FQA inicia */
 .container-faq {
-    width: 60%;
+    width: 70%;
     margin: 100px auto;
+    text-align: justify;
 }
 
 .cont-faq{
@@ -235,7 +302,7 @@ footer {
             
             }
             p {
-                font-size: 1.3rem;
+                font-size: 1.1rem;
             }
         }
     }
@@ -245,14 +312,14 @@ footer {
 /* FQA fin */
 @media only screen and (min-width:200px) and (max-width: 768px) {
 
-    /* Navbar iniia */
+    /* Navbar inicia */
     .navbar-collapse {
         color: $negro !important;
         text-align: center;
         box-shadow: 0 0 10px $amarillo;
     }
-
     /* navbar fin */
+
     /* tu espacio inicia */
     .container {
         display: flex;
@@ -282,7 +349,6 @@ footer {
         padding: 10px;
         font-size: 23px;
     }
-
     /* tu espacio fin */
     /* galery inicia */
     .container-fluid {
@@ -291,9 +357,22 @@ footer {
         margin: auto;
         gap: 25px;
     }
-
     /* galery fin */
-}
-         
+    /* fqa inicia */
+    .container-faq {
+        width: 80%;
+        margin: 100px auto;
+    }
+} 
 
- 
+@media (min-width: 992px){
+    .sec2{
+       display: none;
+    }   
+   }
+   
+   @media (max-width: 992px){
+       .sec{
+          display: none;
+       }   
+      }
