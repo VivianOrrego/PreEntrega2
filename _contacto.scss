@@ -1,9 +1,10 @@
 /* boostrap */
-.form2{
+.form1{
     margin-top: 60px;
 }
 main{
-    height: 700px;
+    height: 600px;
+    width: 100%;
     
 }
 aside{
@@ -24,3 +25,46 @@ aside{
     padding: 10px;
     
 }
+
+#titleSpan{
+    font-size: 50px;
+    
+}
+#titleParrafo{
+    text-align: left;
+    font-size: 20px;
+}
+
+.cont2{
+    width: 100%;
+    margin: 5px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+@media (max-width: 756px){
+    .titleContacto1{
+        display: none;
+    }
+    .form1{
+        display: none;
+    }
+}
+
+
+@media (min-width: 757px){
+    .titleContacto2{
+        margin-top: 50px;
+        display: none;
+        justify-content: center;
+    }
+    .form2 input{
+        width: 100%;
+    }
+    .form2{
+        display: none;
+        justify-content: center;
+    }
+    
+}
+

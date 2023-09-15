@@ -18,28 +18,39 @@ $morado: rgb(185, 51, 185);
     background-color: $morado !important;
     font-size: 20px;
     padding: 5px;
+    
+
     .brand {
         color: $negro !important;
         font-size: 30px;
     }
+
     .collapse {
         justify-content: end;
     }
+
     .nav-link {
         color: rgba(255, 255, 255, 0.887) !important;
         font-size: 25px;
         transition: all 0.6s;
-        
+
     }
-    .nav-link:hover{
+
+    .nav-link:hover {
         color: $amarillo !important;
         transform: scale(0.9);
     }
-    li:nth-child(4){
+
+    li:nth-child(4) {
         background-color: $amarillo;
         color: $negro !important;
         border-radius: 5px;
-        .nav-link{
+        animation-name: efecto;
+        animation-iteration-count: infinite;
+        animation-duration: 4s;
+        animation-direction: alternate;
+
+        .nav-link {
             color: #000 !important;
         }
     }
@@ -50,7 +61,8 @@ $morado: rgb(185, 51, 185);
     font-size: 30px;
     transition: all 0.6s;
 }
-.logo3:hover{
+
+.logo3:hover {
     transform: scale(1.2);
 }
 
@@ -62,10 +74,35 @@ $morado: rgb(185, 51, 185);
 /* Home */
 
 .carousel-inner img {
-    height: 80%;
+    height: auto;
     width: 100%;
-    padding: 20px 50px;
+    padding: 20px;
     border-radius: 120px;
+}
+
+#fxContainer{
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-direction: alternate;
+}
+@keyframes aparecer {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    0% {
+        width: 100%;
+    }
+    10% {
+        transform: translateY(-150px);
+    }
+    100% {
+        width: 100%;
+    }
 }
 
 footer {
@@ -85,13 +122,14 @@ footer {
     font-size: 50px;
 }
 
-.texto1{
+.texto1 {
     text-align: center;
     color: $negro;
     font-size: 50px;
     margin-top: 30px;
 }
-.texto2{
+
+.texto2 {
     color: rgb(244, 190, 14);
     font-size: 50px;
 }
@@ -107,8 +145,6 @@ footer {
 
 .container {
     background-color: $blanco;
-
-
     width: 450px;
     height: 560px;
     padding: 1px;
@@ -116,7 +152,6 @@ footer {
     border-radius: 30px;
 
 }
-
 
 .form {
     width: 80%;
@@ -132,9 +167,10 @@ footer {
 }
 
 .form {
-    .label{
+    .label {
         font-size: 13px;
     }
+
     .control {
         padding: 0.7rem;
     }
@@ -166,29 +202,54 @@ footer {
     width: 95%;
 }
 
-.card-img-top{
+.card-img-top {
     transition: all 0.6s;
 }
-.card-img-top:hover{
+
+.card-img-top:hover {
     transform: scale(0.9);
+    animation-name: efecto;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-direction: alternate;
+}
+@keyframes efecto {
+    0% {
+        border-radius: 80px 20px 60px 40px;
+    }
+    25% {
+        border-radius: 100px 40px 80px 60px;
+    }
+    50% {
+        border-radius: 20px 60px 100px 80px;        
+    }
+    75% {
+        border-radius: 40px 80px 20px 100px;
+    }
+    100% {
+        border-radius: 60px 10px 40px 20px;
+    }
 }
 
+
 .btn-grad {
-    background-image: linear-gradient(to right, #DA22FF 0%, #f6d964dc  51%, #DA22FF  100%);
+    background-image: linear-gradient(to right, #DA22FF 0%, #f6d964dc 51%, #DA22FF 100%);
     margin: 10px;
     padding: 15px 45px;
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
     background-size: 200% auto;
-    color: white;            
+    color: white;
     box-shadow: 0 0 20px #eee;
     border-radius: 10px;
     display: block;
+    width: 90%;
 }
 
 .btn-grad:hover {
-    background-position: right center; /* change the direction of the change here */
+    background-position: right center;
+    /* change the direction of the change here */
     color: #fff;
     text-decoration: none;
 }
@@ -202,16 +263,18 @@ footer {
     text-align: justify;
 }
 
-.cont-faq{
+.cont-faq {
     .faq {
         box-shadow: 0 0 15px -1px;
         padding: 30px;
     }
+
     .title-faq {
         text-align: center;
         font-size: 2rem;
         margin-bottom: 30px;
     }
+
     .item-faq {
         box-shadow: 0 0 15px -1px rgba(242, 72, 72, 0.2);
         margin-bottom: 20px;
@@ -233,9 +296,10 @@ footer {
                 font-size: 3rem;
                 top: 10px;
                 opacity: .1;
-            
+
             }
         }
+
         .answer {
             position: relative;
             display: flex;
@@ -243,14 +307,16 @@ footer {
             align-items: center;
             padding: 20px 20px 20px 80px;
             transition: .4s;
+
             span {
                 position: absolute;
                 left: 10px;
                 font-size: 3rem;
                 top: 10px;
                 opacity: .1;
-            
+
             }
+
             p {
                 font-size: 1.1rem;
             }
@@ -260,7 +326,7 @@ footer {
 }
 
 /* FQA fin */
-@media only screen and (min-width:200px) and (max-width: 768px) {
+@media only screen and (min-width:0px) and (max-width: 756px) {
 
     /* Navbar inicia */
     .navbar-collapse {
@@ -268,7 +334,19 @@ footer {
         text-align: center;
         box-shadow: 0 0 10px $amarillo;
     }
+
     /* navbar fin */
+    /* carrusel */
+    .carousel-inner img {
+        height: auto;
+        width: 100%;
+        border-radius: 60px;
+        padding: 20px;
+    }
+
+    .nav {
+        height: 115px;
+    }
 
     /* tu espacio inicia */
     .container {
@@ -299,6 +377,7 @@ footer {
         padding: 10px;
         font-size: 23px;
     }
+
     /* tu espacio fin */
     /* galery inicia */
     .container-fluid {
@@ -307,22 +386,23 @@ footer {
         margin: auto;
         gap: 25px;
     }
+
     /* galery fin */
     /* fqa inicia */
     .container-faq {
         width: 80%;
         margin: 100px auto;
     }
-} 
+}
 
-@media (min-width: 992px){
-    .sec2{
-       display: none;
-    }   
-   }
-   
-   @media (max-width: 992px){
-       .sec{
-          display: none;
-       }   
-      }
+@media (min-width: 992px) {
+    .sec2 {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .sec {
+        display: none;
+    }
+}

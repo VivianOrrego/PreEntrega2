@@ -32,6 +32,10 @@ font-family: 'Roboto Slab', serif; */
   background-color: yellow;
   color: black !important;
   border-radius: 5px;
+  animation-name: efecto;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-direction: alternate;
 }
 .navbar li:nth-child(4) .nav-link {
   color: #000 !important;
@@ -54,12 +58,37 @@ font-family: 'Roboto Slab', serif; */
 
 /* Home */
 .carousel-inner img {
-  height: 80%;
+  height: auto;
   width: 100%;
-  padding: 20px 50px;
+  padding: 20px;
   border-radius: 120px;
 }
 
+#fxContainer {
+  animation-name: aparecer;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-direction: alternate;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+  0% {
+    width: 100%;
+  }
+  10% {
+    transform: translateY(-150px);
+  }
+  100% {
+    width: 100%;
+  }
+}
 footer {
   background-color: black;
   color: white;
@@ -194,8 +223,29 @@ footer {
 
 .card-img-top:hover {
   transform: scale(0.9);
+  animation-name: efecto;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-direction: alternate;
 }
 
+@keyframes efecto {
+  0% {
+    border-radius: 80px 20px 60px 40px;
+  }
+  25% {
+    border-radius: 100px 40px 80px 60px;
+  }
+  50% {
+    border-radius: 20px 60px 100px 80px;
+  }
+  75% {
+    border-radius: 40px 80px 20px 100px;
+  }
+  100% {
+    border-radius: 60px 10px 40px 20px;
+  }
+}
 .btn-grad {
   background-image: linear-gradient(to right, #DA22FF 0%, rgba(246, 217, 100, 0.862745098) 51%, #DA22FF 100%);
   margin: 10px;
@@ -208,21 +258,24 @@ footer {
   box-shadow: 0 0 20px #eee;
   border-radius: 10px;
   display: block;
+  width: 90%;
 }
 
 .btn-grad:hover {
-  background-position: right center; /* change the direction of the change here */
+  background-position: right center;
+  /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
 }
 
 /* boostrap */
-.form2 {
+.form1 {
   margin-top: 60px;
 }
 
 main {
-  height: 700px;
+  height: 600px;
+  width: 100%;
 }
 
 aside h1 {
@@ -241,6 +294,44 @@ aside p {
   padding: 10px;
 }
 
+#titleSpan {
+  font-size: 50px;
+}
+
+#titleParrafo {
+  text-align: left;
+  font-size: 20px;
+}
+
+.cont2 {
+  width: 100%;
+  margin: 5px;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+@media (max-width: 756px) {
+  .titleContacto1 {
+    display: none;
+  }
+  .form1 {
+    display: none;
+  }
+}
+@media (min-width: 757px) {
+  .titleContacto2 {
+    margin-top: 50px;
+    display: none;
+    justify-content: center;
+  }
+  .form2 input {
+    width: 100%;
+  }
+  .form2 {
+    display: none;
+    justify-content: center;
+  }
+}
 /* FQA inicia */
 .container-faq {
   width: 70%;
@@ -299,7 +390,7 @@ aside p {
 }
 
 /* FQA fin */
-@media only screen and (min-width: 200px) and (max-width: 768px) {
+@media only screen and (min-width: 0px) and (max-width: 756px) {
   /* Navbar inicia */
   .navbar-collapse {
     color: black !important;
@@ -307,6 +398,16 @@ aside p {
     box-shadow: 0 0 10px yellow;
   }
   /* navbar fin */
+  /* carrusel */
+  .carousel-inner img {
+    height: auto;
+    width: 100%;
+    border-radius: 60px;
+    padding: 20px;
+  }
+  .nav {
+    height: 115px;
+  }
   /* tu espacio inicia */
   .container {
     display: flex;
