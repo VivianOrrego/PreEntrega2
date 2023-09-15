@@ -90,54 +90,46 @@ footer {
 }
 
 /* buscador del home */
-.container2 {
-  background-image: url(https://smartsite-production.s3.amazonaws.com/images/new_home_pe/buscar-sede.webp);
+#bgBuscador {
+  background-image: url(https://smartsite-production.s3.amazonaws.com/images/new_home_pe/buscar-sede.webp) !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   height: 300px;
-  margin-top: 30px;
-  border-radius: 30px;
 }
-.container2 .container-search {
-  position: absolute;
-  left: 48%;
-  top: 145%;
-  transform: translate(-50%, -50%);
-  padding: 10px;
+
+.containerBuscador {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
-.container2 input {
-  outline: none;
-  box-sizing: border-box;
-  height: 60px;
-  width: 400px;
-  padding: 0 20px;
-  color: #000;
-  border-radius: 50px;
-  font-size: 20px;
-  border: 1px solid #D50000;
-  transition: all 0.7s ease;
+
+.buscador {
+  display: flex;
 }
-.container2 .btn-search {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 80px;
-  height: 80px;
-  background-color: rgb(185, 51, 185);
-  line-height: 50%;
+.buscador input {
+  height: 50px;
+  z-index: 1;
+  border-radius: 20px;
   text-align: center;
-  cursor: pointer;
-  transition: 0.5s;
+  font-size: 20px;
 }
-.container2 .btn-search i {
-  font-size: 25px;
-  color: #fff;
-  line-height: 80px;
-  transition: all 0.7s ease;
+.buscador .aButtom {
+  position: relative;
+  right: 40px;
+  z-index: 2;
+  margin-top: -6px;
 }
-.container2 .container-search:hover input {
-  width: 350px;
+.buscador .aButtom img {
+  position: absolute;
+  width: 30px;
 }
-.container2 .container-search:hover i {
-  transform: rotate(-360deg);
+.buscador .aButtom img:hover {
+  position: absolute;
+  width: 32px;
+  height: auto;
 }
 
 /* Formulario */
@@ -194,6 +186,7 @@ footer {
   justify-content: center;
   margin: 25px 20px;
   gap: 25px;
+  width: 95%;
 }
 
 .card-img-top {

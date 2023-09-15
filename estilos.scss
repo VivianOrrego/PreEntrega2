@@ -97,58 +97,7 @@ footer {
 }
 
 /* buscador del home */
-.container2{
-    background-image: url(https://smartsite-production.s3.amazonaws.com/images/new_home_pe/buscar-sede.webp);
-    height: 300px;
-    margin-top: 30px;
-    border-radius: 30px;
-
-    .container-search{
-        position: absolute;
-        left: 48%;
-        top: 145%;
-        transform: translate(-50%, -50%);
-        padding: 10px;
-    }
-    input{
-        outline: none;
-        box-sizing: border-box;
-        height: 60px;
-        width: 400px;
-        padding: 0 20px;
-        color: #000;
-        border-radius: 50px;
-        font-size: 20px;
-        border: 1px solid #D50000;
-        transition: all .7s ease;
-    }
-    .btn-search{
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 80px;
-        height: 80px;
-        background-color: $morado;
-        line-height: 50%;
-        text-align: center;
-        cursor: pointer;
-        transition: .5s;
-    
-        i{
-            font-size: 25px;
-            color: #fff;
-            line-height: 80px;
-            transition: all .7s ease;
-        }
-    }
-    
-    .container-search:hover input{
-        width: 350px;
-    }
-    .container-search:hover i{
-        transform: rotate(-360deg);
-    }
-}
+@import "_buscador.scss";
 
 
 /* Formulario */
@@ -214,6 +163,7 @@ footer {
     justify-content: center;
     margin: 25px 20px;
     gap: 25px;
+    width: 95%;
 }
 
 .card-img-top{
